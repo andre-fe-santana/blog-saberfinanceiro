@@ -1,0 +1,8 @@
+#Ignorando as anotacões
+anotacoes
+
+#Ignorando chaves de API
+.env
+
+#Ignorando arquivos de texto
+.txt
