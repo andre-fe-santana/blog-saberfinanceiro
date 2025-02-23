@@ -20,17 +20,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="/path/to/parallax.min.js"></script>
   <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top justify-content-center shadow-sm" id="nav-container">
+        <nav class="navbar navbar-expand-lg fixed-top justify-content-center shadow-sm align-items-center" id="nav-container">
             <a href="index.html" class="navbar-brand">
                 <img id="logo" src="img/logo.png" alt=""> Saber Financeiro
             </a>
         </nav>
     </header>
 
-    <div class="container">
+    <div class="container" id="materias-lidas">
       <div class="row"> <!-- nova linha -->
         <h2>Matérias Mais Lidas</h2>
         <!-- blog (conteudo principal main)-->
@@ -51,14 +52,14 @@
              </div>
 
              <div class="card mb-3"> <!-- mb -> margin bottom -->
-              <img src="img/materias/app-financa.jpg" alt="Como fazer um planejamento financeiro?">
+              <img src="img/materias/app-financa.jpg" alt="Recomendações de aplicativos de finanças">
               <div class="card-body">
                 <div class="d-flex flex-wrap gap-2 mb-2">
                   <span id="tag-post" class="badge rouded-pill">Ferramentas</span>
                 </div>
                 <h5 class="card-title">Melhores Apps para Finanças Pessoais</h5>
                 <p class="card-text">4 min de leitura | Escrito por Lucas Pansani </p>
-                <a href="" class="stretched-link"></a>
+                <a href="materias/app-financa.html" class="stretched-link"></a>
               </div>
              </div>
          </div>
@@ -75,19 +76,19 @@
                 </div>
                 <h5 class="card-title">Como Montar uma Reserva de Emergência?</h5>
                 <p class="card-text">8 min de leitura | Escrito por Junior de Sá</p>
-                <a href="" class="stretched-link"></a>
+                <a href="materias/reserva.html" class="stretched-link"></a>
               </div>
              </div>
 
              <div class="card mb-3"> <!-- mb -> margin bottom -->
-              <img src="img/materias/erros-financeiros.jpg" alt="Como montar uma reserva de emergência?">
+              <img src="img/materias/erros-financeiros.jpg" alt="Erros Financeiros">
               <div class="card-body">
                 <div class="d-flex flex-wrap gap-2 mb-2">
-                  <span id="tag-post" class="badge rouded-pill">Finanças Pessoais</span>
+                  <span id="tag-post" class="badge rouded-pill">Como cuidar do meu dinheiro</span>
                 </div>
                 <h5 class="card-title">5 Erros Financeiros que Podem Acabar com seu Dinheiro</h5>
                 <p class="card-text">8 min de leitura | Escrito por João Pedro</p>
-                <a href="" class="stretched-link"></a>
+                <a href="materias/erros-financeiros.html" class="stretched-link"></a>
               </div>
              </div>
          </div>
@@ -96,16 +97,23 @@
           <aside class="col-md-4">
             <h3>Materiais do Blog</h3>
             <div class="list-group mb-3"> <!-- margin bottom -->
-              <a href="#" class="list-group-item list-group-item-action">Planilha de Gastos</a>
-              <a href="#" class="list-group-item list-group-item-action">Ebook Gratuito</a>
+              <a id="materiais-tag" href="materiais/planilha.html" class="list-group-item list-group-item-action">Planilha de Gastos</a>
             </div>
             
             <h3>Calculadoras</h3>
             <div class="list-group mb-3">
-              <a href="#" class="list-group-item list-group-item-action">Calculadora de Juros Simples</a>
-              <a href="#" class="list-group-item list-group-item-action">Calculadora de Juros Compostos</a>
+              <a id="materiais-tag" href="#" class="list-group-item list-group-item-action">Juros Simples</a>
+              <a id="materiais-tag" href="#" class="list-group-item list-group-item-action">Juros Compostos</a>
             </div>
           </aside>
+      </div>
+
+      <div class="container">
+        <div class="row text-end"> <!-- gambiarra pra colocar o botão no ultimo elemento de materia -->
+          <div class="col-8">
+            <a id="ver-mais" href="postagens.html" class="btn">Ver Todas as Postagens</a>
+          </div>
+        </div>
       </div>
 
       <section id="nosso-time" class="py-5">
@@ -122,8 +130,8 @@
                   <p><small>Dev</small></p>
 
                   <div id="nosso-time-links" class="d-flex justify-content-start gap-3">
-                    <a href="https://github.com/andre-fe-santana" ><i class="fa-brands fa-github fs-3 text-dark"></i></a>
-                    <a href="https://linkedin.com/in/andre-fe-santana"><i class="fa-brands fa-linkedin-in fs-3 text-dark"></i></a>
+                    <a href="https://github.com/andre-fe-santana" target="_blank"><i class="fa-brands fa-github fs-3 text-dark"></i></a>
+                    <a href="https://linkedin.com/in/andre-fe-santana" target="_blank"><i class="fa-brands fa-linkedin-in fs-3 text-dark"></i></a>
                   </div>
                 </div>
                </div>
@@ -138,8 +146,8 @@
                   <p><small>Escritor</small></p>
 
                   <div id="nosso-time-links" class="d-flex justify-content-start gap-3">
-                    <a href="https://github.com/Junior-sa" ><i class="fa-brands fa-github fs-3 text-dark"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in fs-3 text-dark"></i></a>
+                    <a href="https://github.com/Junior-sa" target="_blank"><i class="fa-brands fa-github fs-3 text-dark"></i></a>
+                    <a href="https://www.linkedin.com/in/junior-sá-91a95b287/" target="_blank"><i class="fa-brands fa-linkedin-in fs-3 text-dark"></i></a>
                   </div>
                 </div>
                </div>
@@ -154,8 +162,8 @@
                   <p><small>Escritor</small></p>
 
                   <div id="nosso-time-links" class="d-flex justify-content-start gap-3">
-                    <a href="#" ><i class="fa-brands fa-github fs-3 text-dark"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in fs-3 text-dark"></i></a>
+                    <a href="https://github.com/VictorHLF42" target="_blank"><i class="fa-brands fa-github fs-3 text-dark"></i></a>
+                    <a href="https://www.linkedin.com/in/victor-hugo-dev-" target="_blank"><i class="fa-brands fa-linkedin-in fs-3 text-dark"></i></a>
                   </div>
                 </div>
                </div>
@@ -170,8 +178,8 @@
                   <p><small>Escritor</small></p>
 
                   <div id="nosso-time-links" class="d-flex justify-content-start gap-3">
-                    <a href="#" ><i class="fa-brands fa-github fs-3 text-dark"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in fs-3 text-dark"></i></a>
+                    <a href="https://github.com/jpftinoco" target="_blank"><i class="fa-brands fa-github fs-3 text-dark"></i></a>
+                    <a href="https://www.linkedin.com/in/joao-pedro-freire-95239b351/"target="_blank"><i class="fa-brands fa-linkedin-in fs-3 text-dark"></i></a>
                   </div>
                 </div>
                </div>
@@ -186,8 +194,8 @@
                   <p><small>Escritor</small></p>
 
                   <div id="nosso-time-links" class="d-flex justify-content-start gap-3">
-                    <a href="#" ><i class="fa-brands fa-github fs-3 text-dark"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in fs-3 text-dark"></i></a>
+                    <a href="https://github.com/Pansani-Lc" target="_blank" ><i class="fa-brands fa-github fs-3 text-dark"></i></a>
+                    <a href="https://www.linkedin.com/in/lucas-pansani-rebouças-367b4a273/" target="_blank"><i class="fa-brands fa-linkedin-in fs-3 text-dark"></i></a>
                   </div>
                 </div>
                </div>
@@ -204,14 +212,14 @@
           <!-- Pagina Inicial -->
           <div class="col-md-2">
             <ul class="list-unstyled d-flex flex-column gap-2">
-              <li><a href="" class="text-decoration-none fw-bold">Página Inicial</a></li>
+              <li><a href="index.html" class="text-decoration-none fw-bold">Página Inicial</a></li>
             </ul>
           </div>
           <div class="col-md-2">
             <ul class="list-unstyled d-flex flex-column gap-2">
-              <li><a href="" class="text-decoration-none fw-bold">Postagens</a></li>
-              <li><a href="" class="text-decoration-none">Mais Lidas</a></li>
-              <li><a href="" class="text-decoration-none">Autores</a></li>
+              <li><a href="index.html#materias-lidas" class="text-decoration-none fw-bold">Postagens</a></li>
+              <li><a href="index.html#materias-lidas" class="text-decoration-none">Mais Lidas</a></li>
+              <li><a href="index.html#nosso-time" class="text-decoration-none">Autores</a></li>
             </ul>
           </div>
           <div class="col-md-2">
@@ -224,9 +232,8 @@
           </div>
           <div class="col-md-2">
             <ul class="list-unstyled d-flex flex-column gap-2">
-              <li><a href="" class="text-decoration-none fw-bold">Materiais</a></li>
-              <li><a href="" class="text-decoration-none">Planilha de Gastos</a></li>
-              <li><a href="" class="text-decoration-none">E-books</a></li>
+              <li><a href="../index.html#materias-lidas" class="text-decoration-none fw-bold">Materiais</a></li>
+              <li><a href="materiais/planilha.html" class="text-decoration-none">Planilha de Gastos</a></li>
             </ul>
           </div>
         </div>

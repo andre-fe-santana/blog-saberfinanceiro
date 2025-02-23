@@ -28,17 +28,58 @@ body{
     padding-top: 70px;
 }
 
+.card:hover{
+    transition: 0.3s;
+    background-color: rgb(227, 227, 227);
+}
+
 #tag-post {
     background-color: var(--corPrincipal);
     color: var(--corSecundaria);
 }
 
+#materiais-tag {
+    background-color: var(--corPrincipal);
+    color: white;
+}
+
+#ver-mais{
+    background-color: var(--corPrincipal);
+    color: white;
+    text-decoration: none;
+}
+
+#ver-mais:hover {
+    transition: 0.3s;
+    background-color: #5fa944;
+}
+
 footer {
-    background-color: #70C252;
+    background-color: var(--corPrincipal);
     color: var(--corSecundaria);
 }
 
 footer a{
     text-decoration: none;
     color: var(--corSecundaria);
+}
+
+/*
+=================
+OUTRAS PÁGINAS
+=================
+*/
+
+#checkMark{
+    color: var(--corPrincipal);
+}
+
+#btn-baixar {
+    background-color: var(--corPrincipal);
+    color: white;
+}
+
+#btn-baixar:hover{
+    transition: 1s;
+    background-color: #5fa944;
 }

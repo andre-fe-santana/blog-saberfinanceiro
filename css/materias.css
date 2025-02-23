@@ -17,9 +17,25 @@
     line-height: 48px;
 }
 
+#materia-texto li {
+    line-height: 36px;
+}
+
 #imgPost {
-    height: 400px;
+    height: 450px;
     overflow: hidden;
+}
+
+#imgTexto {
+    aspect-ratio: 16/9;
+    width: 600px;
+    height: 350px;
+    overflow: hidden;
+}
+
+#link-planilha{
+    color: var(--corPrincipal);
+    font-weight: bold;
 }
 
 #autor {
