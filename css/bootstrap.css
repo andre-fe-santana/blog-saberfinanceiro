@@ -5,88 +5,40 @@
     --corSecundaria: #f1f1f1;
 }
 
-.row {
-    margin: 0;
-}
-
-.container {
-    padding: 70px 0;
-}
-
-p, li{
-    /* color: var(--corSecundaria); */
-    font-size: 14px;
-}
-
-header, .navbar{
-    background-color: #70C252;
-}
-
-#nav-container{
-    padding-top: 0;
-    padding-bottom: 0;
-}
+/* navbar */
 
 #logo {
     width: 30px;
     height: 30px;
 }
 
-.navbar-brand{
-    padding: 0;
+#nav-container {
+    background-color: var(--corPrincipal);
+    color: var(--corPrincipal);
+}
+
+#nav-container a{
+    color: var(--corSecundaria);
+    font-weight: bold;
+}
+
+/* main */
+
+body{
+    padding-top: 70px;
+}
+
+#tag-post {
+    background-color: var(--corPrincipal);
     color: var(--corSecundaria);
 }
 
-.navbar-brand:hover{
+footer {
+    background-color: #70C252;
     color: var(--corSecundaria);
 }
 
-#navbar-links{
-    color: var(--corSecundaria);
-}
-
-.navbar-expand-lg .navbar-nav .nav-link { /* sobrevescrevendo o css do site*/
-    padding: 1rem .8rem;
-}
-
-/* carousel */
-#mainSlide .carousel-item img{
-    filter: brightness(80%); /* diminuindo o brilho da imagem */
-}
-
-#mainSlide .carousel-inner, #mainSlide .carousel-item {
-    height: 90vh;
-}
-
-#mainSlide .carousel-caption {
-    top: 40%;
-}
-
-#mainSlide .carousel-caption h2{
-    font-size: 50px;
-}
-
-/* matérias mais lidas */
-#materias-lidas a{
+footer a{
     text-decoration: none;
-    color: black;
-    background-color: #f9f9f9;
+    color: var(--corSecundaria);
 }
-
-.main-title {
-    color: #444;
-    margin: 0 0 65px 0;
-    font-size: 40px;
-    text-align: center;
-  }
-  
-  .main-title::after {
-    content: "";
-    border-top: 2px solid #333;
-    width: 15%;
-    /* position: absolute; */
-    top: 100px;
-    left: 42.5%;
-  }
-
-/* hover de quando clicar na matéria */

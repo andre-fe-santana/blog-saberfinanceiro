@@ -1,0 +1,36 @@
+@import url(bootstrap.css);
+
+/* Configurações Gerais */
+
+:root{
+    --corPrincipal: #70C252;
+    --corSecundaria: #f1f1f1;
+}
+
+/* main */
+
+#materia-texto p, h5{
+    line-height: 32px;
+}
+
+#materia-texto h3{
+    line-height: 48px;
+}
+
+#imgPost {
+    height: 400px;
+    overflow: hidden;
+}
+
+#autor {
+    background-color: var(--corPrincipal);
+    border-radius: 10px;
+}
+
+#autor h4{
+    font-size: 28px;
+}
+
+#autor-links {
+    font-size: 36px;
+}
