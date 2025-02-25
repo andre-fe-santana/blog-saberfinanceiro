@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
+
 /* Configurações Gerais */
 
 :root{
     --corPrincipal: #70C252;
     --corSecundaria: #f1f1f1;
+}
+
+body{
+    padding-top: 70px;
 }
 
 /* navbar */
@@ -24,13 +30,9 @@
 
 /* main */
 
-body{
-    padding-top: 70px;
-}
-
 .card:hover{
     transition: 0.3s;
-    background-color: rgb(227, 227, 227);
+    background-color: #ededed;
 }
 
 #tag-post {
@@ -70,6 +72,8 @@ OUTRAS PÁGINAS
 =================
 */
 
+/* == TELA DE PLANILHA == */
+
 #checkMark{
     color: var(--corPrincipal);
 }
@@ -82,4 +86,33 @@ OUTRAS PÁGINAS
 #btn-baixar:hover{
     transition: 1s;
     background-color: #5fa944;
+}
+
+/* == CALCULADORA DE JUROS SIMPLES */
+
+#btn-enviar {
+    background-color: var(--corPrincipal);
+    color: white;
+}
+
+#btn-enviar:hover{
+    transition: 0.3s;
+    background-color: #5fa944;
+}
+
+#btn-apagar {
+    background-color: none;
+    border: var(--corPrincipal) solid;
+    color: var(--corPrincipal);
+}
+
+#btn-apagar:hover {
+    transition: 0.3;
+    background-color: #ececec;
+    color: #5fa944;
+}
+
+#cardResultado {
+    background-color: var(--corPrincipal);
+    color: white;
 }
